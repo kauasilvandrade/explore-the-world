@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+/* CONFIGURAÇÕES GLOBAIS */
+:root {}
+
+* {}
+
+body {}
+
+.container {}
+
+/* CABEÇALHO */
+.cabecalho {}
+
+/* MENU */
+.cabecalho__menuNavegacao {}
+
+.cabecalho__listaMenu {}
+
+.cabecalho__itemMenu {}
+
+.cabecalho__itemMenu a {}
+
+/* ÍCONES REDES SOCIAIS */
+.cabecalho__iconesRedes {}
+
+.cabecalho__iconesRedes a {}
+
+.cabecalho__iconesRedes a i {}
+
+/* CONTEÚDO */
+.conteudo {}
+
+/* SEÇÃO INTRODUÇÃO */
+.secaoIntroducao {}
+
+.secaoIntroducao h3 {}
+
+.secaoIntroducao h1 {}
+
+.secaoIntroducao h1 strong {}
+
+.secaoIntroducao a {}
+
+/* SEÇÃO CATEGORIA */
+.secaoCategoria {}
+
+.secaoCategoria__navegacao {}
+
+.secaoCategoria__listaCategoria {}
+
+.secaoCategoria__itemCategoria {}
+
+.secaoCategoria__itemCategoria a {}
+
+.secaoCategoria > a {}
+
+/* SEÇÃO DISCOVER NEW HORIZONS */
+.secaoDiscover {}
+
+/* IMAGEM */
+.secaoDiscover__img {} 
+
+.secaoDiscover__img img {}
+
+/* INFORMAÇÕES DISCORVER */
+.secaoDiscover__infoDiscover {}
+
+.secaoDiscover__infoDiscover h2 {}
+
+.secaoDiscover__listaInfo {}
+
+.secaoDiscover__itemInfo {}
+
+.secaoDiscover__itemInfo a {}
+
+/* DESCRIÇÃO INFORMAÇÕES */
+.secaoDiscover__descricaoInfo {}
+
+.secaoDiscover__descricaoInfo p {}
+
+.secaoDiscover__descricaoInfo a {}
+
+/* SEÇÃO DE SERVIÇOS */
+.secaoServicos {}
+
+.secaoServicos h2 {}
+
+.secaoServicos__listaServicos {}
+
+.secaoServicos__itemServicos {}
+
+.secaoServicos__itemServicos span {}
+
+.secaoServicos__itemServicos span i {}
+
+.secaoServicos__itemServicos h3 {}
+
+.secaoServicos__itemServicos p {}
+
+/* SEÇÃO COMPRA DE PASSEIO */
+.secaoCompraPasseio {}
+
+.secaoCompraPasseio h2 {}
+
+.secaoCompraPasseio__passeio {}
+
+.secaoCompraPasseio__img {}
+
+.secaoCompraPasseio__img img {}
+
+/* DESCRIÇÃO */
+.secaoCompraPasseio__descricao {}
+
+.secaoCompraPasseio__descricao span {}
+
+.secaoCompraPasseio__descricao h3 {}
+
+/* AVALIAÇÃO */
+.descricao__estrelaAvaliacao {}
+
+.descricao__estrelaAvaliacao span {}
+
+.descricao__estrelaAvaliacao span i {}
+
+.descricao__estrelaAvaliacao a {}
+
+.secaoCompraPasseio__descricao p {}
+
+.secaoCompraPasseio__descricao a {}
+
+/* SEÇÃO PASSEIOS DIFERENTES  */
+.secaoPasseiosDiferentes {}
+
+.secaoPasseiosDiferentes h2 {}
+
+.secaoPasseiosDiferentes__listaIntegrantes {}
+
+.secaoPasseiosDiferentes__integrantes {}
+
+.secaoPasseiosDiferentes__integrantes img {}
+
+.secaoPasseiosDiferentes__integrantes h2 {}
+
+.secaoPasseiosDiferentes__integrantes span {}
+
+.secaoPasseiosDiferentes__integrantes a {}
+
+/* SEÇÃO PRIMEIRAS IMPRESSÕES */
+.secaoPrimeirasImpressoes {}
+
+.secaoPrimeirasImpressoes h2 {}
+
+.secaoPrimeirasImpressoes p {}
+
+.secaoPrimeirasImpressoes a {}
+
+/* SEÇÃO GALERIA */
+.secaoGaleria {}
+
+.secaoGaleria h3 {}
+
+.secaoGaleria___listaGaleria {}
+
+.secaoGaleria__itemGaleria {}
+
+.secaoGaleria__itemGaleria img {}
+
+.secaoGaleria__itemGaleria a {}
+
+/* RODAPÉ */
+.rodape {}
+
+/* INFORMAÇÕES */
+.rodape__info {}
+
+.rodape__listaInfo {}
+
+.rodape__listaInfo h3{}
+
+/* ITEM CONTATO */
+.contactUs {}
+
+.info__contato {}
+
+.info__contato span {}
+
+.info__contato span i {}
+
+.info__contato a {}
+
+/* ITEM NOTICÍA */
+.noticias {}
+
+.info__noticiasPopulares {}
+
+.info__noticia {}
+
+.info__noticia a {}
+
+.info__noticia span {}
+
+/* ITEM LINKS RÁPIDOS */
+.linksRapidos {}
+
+.info__linksRapidos {}
+
+.info__listaLinksRapidos {}
+
+.info__link {}
+
+.info__link a {}
+
+.info__linksRapidos a {}
+
+/* CRÉDITOS */
+.rodape__creditos {}
+
+.rodape__creditos p {}
+
+.rodape__icones {}
+
+.rodape__icones a {}
+
+.rodape__icones a i {}
+
+.rodape__creditos  a {}
