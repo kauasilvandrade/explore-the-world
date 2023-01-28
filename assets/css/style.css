@@ -1,25 +1,113 @@
 @charset "UTF-8";
 
 /* CONFIGURAÇÕES GLOBAIS */
-:root {}
+:root {
 
-* {}
+    --branco: #fff;
+    --cinza: #9b9b9b;
+    --azulClaro: #01b3a7;
+    --azulEscuro-1: #162e44;
+    --azulEscuro-2: #11263a;
+    --preto: #151515;
 
-body {}
+    --fonte: "Montserrat", sans-serif, Arial, sans-serif;
 
-.container {}
+} img {
+    width: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 940px;
+}
 
 /* CABEÇALHO */
-.cabecalho {}
+.cabecalho {
+    background-color: var(--azulEscuro-2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 4.4rem;
+}
 
 /* MENU */
 .cabecalho__menuNavegacao {}
 
-.cabecalho__listaMenu {}
+/* BOTÃO MOBILE MENU */
+.cabecalho__btnMenu {
+    border: none;
+    background-color: transparent;
+    position: relative;
+}
+
+.cabecalho__btnMenu span, .cabecalho__btnMenu span::before, .cabecalho__btnMenu span::after {
+    content: '';
+    background-color: white;
+    height: 0.18rem;
+    width: 1.6rem;
+    display: block;
+    position: absolute;
+    transition: .3s;
+}
+
+.cabecalho__btnMenu span {}
+
+.cabecalho__btnMenu span::before {
+    top: -10px;   
+}
+
+.cabecalho__btnMenu span::after {
+    bottom: -10px;
+}
+
+/* CLASSE ATIVADA COM JAVASCRIPT */
+.cabecalho__btnMenu .cabecalho__btnMenu.ativado .hamburguer {
+    transform: rotate(360deg);
+}
+
+.cabecalho__btnMenu.ativado .cabecalho__btnMenu .hamburguer::before {
+    width: 15px;
+    top: 16px;
+    transform: rotate(45deg);
+}
+
+.cabecalho__btnMenu.ativado .cabecalho__btnMenu .hamburguer.ativado::after {}
+
+.cabecalho__listaMenu {
+    position: fixed;
+    background-color: var(--branco);
+    list-style: none;
+    left: 0;
+    height: 100vh;
+    width: 15rem;
+    top: 4.4rem;
+    padding-top: 6rem;
+}
 
 .cabecalho__itemMenu {}
 
-.cabecalho__itemMenu a {}
+.cabecalho__itemMenu a {
+    display: block;
+    text-decoration: none;
+    color: var(--azulEscuro-2);
+    padding: 0.93rem;
+    margin-bottom: 0.2rem;
+}
+
 
 /* ÍCONES REDES SOCIAIS */
 .cabecalho__iconesRedes {}
@@ -29,7 +117,9 @@ body {}
 .cabecalho__iconesRedes a i {}
 
 /* CONTEÚDO */
-.conteudo {}
+.conteudo {
+    padding-top: 6rem;
+}
 
 /* SEÇÃO INTRODUÇÃO */
 .secaoIntroducao {}
