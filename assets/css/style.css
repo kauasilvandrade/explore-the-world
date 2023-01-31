@@ -12,8 +12,6 @@
 
     --fonte: "Montserrat", sans-serif, Arial, sans-serif;
 
-} img {
-    display: none;
 }
 
 * {
@@ -55,6 +53,7 @@ body {
     border: none;
     background-color: transparent;
     position: relative;
+    margin-right: 3rem;
 }
 
 .cabecalho__btnMenu span, .cabecalho__btnMenu span::before, .cabecalho__btnMenu span::after {
@@ -77,24 +76,18 @@ body {
     bottom: -10px;
 }
 
-/* CLASSE ATIVADA COM JAVASCRIPT */
-.cabecalho__btnMenu .cabecalho__btnMenu.ativado .hamburguer {
-    transform: rotate(360deg);
-}
+/* LOGO */
+.cabecalho__logo {}
 
-.cabecalho__btnMenu.ativado .cabecalho__btnMenu .hamburguer::before {
-    width: 15px;
-    top: 16px;
-    transform: rotate(45deg);
+.cabecalho__logo img {
+    max-width: 14rem;
 }
-
-.cabecalho__btnMenu.ativado .cabecalho__btnMenu .hamburguer.ativado::after {}
 
 .cabecalho__listaMenu {
     position: fixed;
     background-color: var(--branco);
     list-style: none;
-    left: 0;
+    left: -100%;
     height: 100vh;
     width: 15rem;
     top: 4.4rem;
@@ -130,7 +123,7 @@ body {
     width: 15rem;
     top: 4.4rem;
     border-bottom: 1px solid var(--cinza);
-    left: 0;
+    left: -100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -152,17 +145,32 @@ body {
 .cabecalho__iconesRedes a i {}
 
 /* CONTEÚDO */
-.conteudo {
-    padding-top: 6rem;
-}
+.conteudo {}
 
 /* SEÇÃO INTRODUÇÃO */
-.secaoIntroducao {}
-.secaoIntroducao h3 {}
+.secaoIntroducao {
+    background-image: url(../img/banner.jpg);
+    padding: 18rem 0.83rem;
+    background-position: center;
+    background-size: cover;
+    color: var(--branco);
+}
 
-.secaoIntroducao h1 {}
+.secaoIntroducao h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.050rem;
+    font-size: 1em;
+}
 
-.secaoIntroducao h1 strong {}
+.secaoIntroducao h1 {
+    font-size: 2.9em;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+.secaoIntroducao h1 strong {
+    font-weight: 600;
+}
 
 .secaoIntroducao a {}
 
