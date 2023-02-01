@@ -6,6 +6,7 @@
     --branco: #fff;
     --cinza: #9b9b9b;
     --azulClaro: #01b3a7;
+    --verde: #50ba87;
     --azulEscuro-1: #162e44;
     --azulEscuro-2: #11263a;
     --preto: #151515;
@@ -40,6 +41,7 @@ body {
     position: fixed;
     top: 0;
     height: 4.4rem;
+    z-index: 2;
 }
 
 /* MENU */
@@ -182,23 +184,31 @@ body {
     padding: 1rem 1.1em;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
 .secaoIntroducao a::before {
     content: '';
-    background-color: var(--azulClaro);
+    background-color: var(--verde);
     height: 100%;
     position: absolute;
-    width: 0;
+    width: 70%;
+    opacity: 0;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     transform-origin: center;
-    transition: all .5s;
+    transition: all .3s;
+    z-index: -1;
+}
+
+.secaoIntroducao a:hover {
+    border: 2px solid var(--verde);
 }
 
 .secaoIntroducao a:hover::before {
-    width: 100%;
+    width: 100%;    
+    opacity: 1;
 }
 
 /* SEÇÃO CATEGORIA */
