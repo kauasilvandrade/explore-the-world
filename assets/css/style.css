@@ -225,7 +225,6 @@ body {
 .secaoCategoria__itemCategoria {
     background-size: cover;
     background-position: center;
-    width: 26rem;
 }
 
 .secaoCategoria__itemCategoria:nth-of-type(1) {
