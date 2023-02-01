@@ -152,7 +152,7 @@ body {
 /* SEÇÃO INTRODUÇÃO */
 .secaoIntroducao {
     background-image: url(../img/banner.jpg);
-    padding: 18rem 0.83rem;
+    padding: 13rem 0.83rem;
     background-position: center;
     background-size: cover;
     color: var(--branco);
@@ -162,6 +162,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 0.050rem;
     font-size: 1em;
+    font-weight: 600;
 }
 
 .secaoIntroducao h1 {
@@ -212,17 +213,58 @@ body {
 }
 
 /* SEÇÃO CATEGORIA */
-.secaoCategoria {}
+.secaoCategoria {
+    padding: 3rem 3rem 6rem 3rem;
+}
 
-.secaoCategoria__navegacao {}
+.secaoCategoria__listaCategoria {
+    list-style: none;
+    margin-bottom: 4rem;
+}
 
-.secaoCategoria__listaCategoria {}
+.secaoCategoria__itemCategoria {
+    background-size: cover;
+    background-position: center;
+    width: 26rem;
+}
 
-.secaoCategoria__itemCategoria {}
+.secaoCategoria__itemCategoria:nth-of-type(1) {
+    background-image: url(../img/categoria-1.jpg);
+}
 
-.secaoCategoria__itemCategoria a {}
+.secaoCategoria__itemCategoria:nth-of-type(2) {
+    background-image: url(../img/categoria-2.jpg);
+}
 
-.secaoCategoria > a {}
+.secaoCategoria__itemCategoria:nth-of-type(3) {
+    background-image: url(../img/categoria-3.jpg);
+}
+
+.secaoCategoria__itemCategoria a {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    height: 17rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0.97rem;
+    transition: .4s;
+}
+
+.secaoCategoria__itemCategoria:hover {}
+
+.secaoCategoria__irPara {
+    color: var(--preto);
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.1em;
+}
 
 /* SEÇÃO DISCOVER NEW HORIZONS */
 .secaoDiscover {}
