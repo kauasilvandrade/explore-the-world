@@ -226,12 +226,19 @@ body {
     margin-bottom: 2rem;
     overflow: hidden;
     position: relative;
+    height: 17rem;
 }
 
 .secaoCategoria__itemCategoria a {}
 
 .secaoCategoria__itemCategoria a img {
     width: 100%;
+    height: 17rem;
+    transition: .5s;
+}
+
+.secaoCategoria__itemCategoria a img:hover {
+    transform: scale(1.1);
 }
 
 .secaoCategoria__itemCategoria h3 {
