@@ -11,6 +11,7 @@
     --azulEscuro-1: #162e44;
     --azulEscuro-2: #11263a;
     --preto: #151515;
+    --laranja: #ffcc00;
 
     --fonte: "Montserrat", sans-serif, Arial, sans-serif;
 
@@ -453,35 +454,81 @@ body {
 }
 
 /* SEÇÃO COMPRA DE PASSEIO */
-.secaoCompraPasseio {}
+.secaoCompraPasseio {
+    padding: 1.5rem;
+}
 
-.secaoCompraPasseio h2 {}
+.secaoCompraPasseio h2 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    font-size: 1.7em;
+}
 
-.secaoCompraPasseio__passeio {}
+.secaoCompraPasseio__passeio {
+    position: relative;
+    margin-bottom: 3rem;
+}
 
 .secaoCompraPasseio__img {}
 
-.secaoCompraPasseio__img img {}
+.secaoCompraPasseio__img img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
 
 /* DESCRIÇÃO */
 .secaoCompraPasseio__descricao {}
 
-.secaoCompraPasseio__descricao span {}
+.descricao__passeio {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: var(--azulClaro);
+}
 
-.secaoCompraPasseio__descricao h3 {}
+.secaoCompraPasseio__descricao h3 {
+    margin-bottom: 1rem;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.secaoCompraPasseio__descricao h3:hover {
+    color: var(--azulClaro);
+}
 
 /* AVALIAÇÃO */
-.descricao__estrelaAvaliacao {}
+.descricao__estrelaAvaliacao {
+    margin-bottom: 1rem;
+}
 
-.descricao__estrelaAvaliacao span {}
+.descricao__estrelaAvaliacao span {
+    margin-right: 1rem;
+}
 
-.descricao__estrelaAvaliacao span i {}
+.descricao__estrelaAvaliacao span i {
+    color: var(--laranja);
+    font-size: 0.8em;
+}
 
-.descricao__estrelaAvaliacao a {}
+.descricao__estrelaAvaliacao a {
+    text-decoration: none;
+    color: var(--cinza);
+    font-size: 0.8em;
+    letter-spacing: 1px;
+}
 
-.secaoCompraPasseio__descricao p {}
+.secaoCompraPasseio__descricao p {
+    line-height: 1.5rem;
+    font-size: 0.88em;
+    color: var(--cinza);
+    margin-bottom: 1rem;
+}
 
-.secaoCompraPasseio__descricao a {}
+.secaoCompraPasseio__descricao a {
+    text-decoration: none;
+}
 
 /* SEÇÃO PASSEIOS DIFERENTES  */
 .secaoPasseiosDiferentes {}
