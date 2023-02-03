@@ -484,13 +484,39 @@ body {
 /* DESCRIÇÃO */
 .secaoCompraPasseio__descricao {}
 
-.descricao__passeio {
-    content: '';
+.descricao__preco {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: var(--azulClaro);
 }
+
+.descricao__preco span {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azulClaro);
+    width: 4.5rem;
+    height: 2.2rem;
+    color: var(--branco);
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+.descricao__preco span::before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    top: 23px;
+} 
+
+.descricao__preco span::before {
+    transform: rotate(-45deg);
+    left: -18px;
+}
+
 
 .secaoCompraPasseio__descricao h3 {
     margin-bottom: 1rem;
@@ -573,21 +599,75 @@ body {
 }
 
 /* SEÇÃO PASSEIOS DIFERENTES  */
-.secaoPasseiosDiferentes {}
+.secaoPasseiosDiferentes {
+    padding: 1.5rem;
+}
 
-.secaoPasseiosDiferentes h2 {}
+.secaoPasseiosDiferentes h2 {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.7em;
+}
 
-.secaoPasseiosDiferentes__listaIntegrantes {}
+.secaoPasseiosDiferentes__listaIntegrantes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    gap: 2.5rem;
+}
 
-.secaoPasseiosDiferentes__integrantes {}
+.secaoPasseiosDiferentes__integrantes {
+    width: 100%;
+    position: relative;
+}
 
-.secaoPasseiosDiferentes__integrantes img {}
+.secaoPasseiosDiferentes__integrantes img {
+    width: 100%;
+    max-width: 7.32rem;
+    max-height: 7.32rem;
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    top: 2rem;
+}
 
-.secaoPasseiosDiferentes__integrantes h2 {}
+.secaoPasseiosDiferentes__integrantes img::before {
+    content: '';
+}
 
-.secaoPasseiosDiferentes__integrantes span {}
+.secaoPasseiosDiferentes__integrantes svg {
+    margin-bottom: -4px;
+    fill: #f7f7f7;
+}
 
-.secaoPasseiosDiferentes__integrantes a {}
+.integrantes__descricao {
+    background-color: var(--cinza-claro);
+    padding-bottom: 2rem;
+}
+
+.integrantes__descricao h2 {
+    font-size: 1.1em;
+    margin-bottom: 0.5rem;
+}
+
+.integrantes__descricao span {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: var(--azulClaro);
+}
+
+.integrantes__descricao a {
+    display: block;
+    color: var(--preto);
+    margin-top: 0.5rem;
+    text-decoration: none;
+    font-size: 1.15em;
+    font-weight: 500;
+}
 
 /* SEÇÃO PRIMEIRAS IMPRESSÕES */
 .secaoPrimeirasImpressoes {}
