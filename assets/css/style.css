@@ -230,14 +230,18 @@ body {
     margin-bottom: 2rem;
     overflow: hidden;
     position: relative;
-    height: 17rem;
+    height: 19rem;
+}
+
+.secaoCategoria__itemCategoria:nth-of-type(2) h3 {
+    transform: translateX(-50%);
 }
 
 .secaoCategoria__itemCategoria a {}
 
 .secaoCategoria__itemCategoria a img {
     width: 100%;
-    height: 17rem;
+    height: 19rem;
     transition: .5s;
 }
 
@@ -250,7 +254,7 @@ body {
     bottom: 1.5rem;
     color: var(--branco);
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-43%);
     font-weight: 600;
     min-width: 10.7rem;
 }
@@ -528,6 +532,44 @@ body {
 
 .secaoCompraPasseio__descricao a {
     text-decoration: none;
+}
+
+.secaoCompraPasseio__descricao a:nth-child(5) {
+    display: block;
+    width: 9.5rem;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    transition: .4s;
+    font-weight: 500;
+    color: var(--preto);
+    border: 2px solid var(--preto);
+    position: relative;
+}
+
+.secaoCompraPasseio__descricao a:nth-child(5):hover{
+    border: 2px solid var(--azulClaro);
+    color: var(--branco);
+}
+
+.secaoCompraPasseio__descricao a:nth-child(5):hover::before {
+    opacity: 1;
+    width: 100%;
+}
+
+.secaoCompraPasseio__descricao a:nth-child(5)::before {
+    content: '';
+    background-color: var(--azulClaro);
+    height: 100%;
+    position: absolute;
+    width: 70%;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+    transition: all .3s;
+    z-index: -1;
 }
 
 /* SEÇÃO PASSEIOS DIFERENTES  */
