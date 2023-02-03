@@ -639,6 +639,14 @@ body {
     content: '';
 }
 
+.secaoPasseiosDiferentes__integrantes #pontasIntegrantes {
+    width: 100%;
+    max-width: unset;
+    max-height: unset;
+    border-radius: unset;
+    top: 0;
+}
+
 .secaoPasseiosDiferentes__integrantes svg {
     margin-bottom: -4px;
     fill: #f7f7f7;
