@@ -600,7 +600,7 @@ body {
 
 /* SEÇÃO PASSEIOS DIFERENTES  */
 .secaoPasseiosDiferentes {
-    padding: 1.5rem;
+    padding: 1.5rem 1.5rem 3.5rem 1.5rem;
 }
 
 .secaoPasseiosDiferentes h2 {
@@ -678,13 +678,62 @@ body {
 }
 
 /* SEÇÃO PRIMEIRAS IMPRESSÕES */
-.secaoPrimeirasImpressoes {}
+.secaoPrimeirasImpressoes {
+    background-image: url(../img/banner-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1700px;
+    background-attachment: fixed;
+    padding: 5rem 0.83rem;
+    text-align: center;
+    color: var(--branco);
+    position: relative;
+}
 
-.secaoPrimeirasImpressoes h2 {}
+.secaoPrimeirasImpressoes::before {
+    content: '';
+    background: rgba(24, 26, 35, 0.21);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
-.secaoPrimeirasImpressoes p {}
+.secaoPrimeirasImpressoes h2 {
+    font-weight: 500;
+    font-size: 2.27em;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
 
-.secaoPrimeirasImpressoes a {}
+.secaoPrimeirasImpressoes p {
+    color: var(--cinza-claro);
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.secaoPrimeirasImpressoes a {
+    position: relative;
+    display: inline-block;
+    width: 11.5rem;
+    padding: 1.2rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    transition: .4s;
+    font-weight: 500;
+    color: var(--branco);
+    background-color: var(--azulClaro);
+    border: 2px solid var(--azulClaro);
+}
+
+.secaoPrimeirasImpressoes a:hover {
+    color: var(--branco);
+    background-color: transparent;
+    border: 2px solid var(--branco);
+}
 
 /* SEÇÃO GALERIA */
 .secaoGaleria {}
