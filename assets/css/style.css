@@ -618,7 +618,7 @@ body {
 
 .secaoPasseiosDiferentes__listaIntegrantes {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     text-align: center;
     list-style: none;
@@ -630,6 +630,34 @@ body {
     position: relative;
 }
 
+.secaoPasseiosDiferentes__integrantes:hover.secaoPasseiosDiferentes__integrantes img {
+    top: -0.01rem;
+}
+
+.secaoPasseiosDiferentes__integrantes:hover.secaoPasseiosDiferentes__integrantes .circulo {
+    opacity: 1;
+    top: 50%;
+}
+
+.integrante__foto {
+    position: relative;
+}
+
+.integrante__foto .circulo {
+    width: 7.3rem;
+    height: 7.3rem;
+    border-radius: 50%;
+    display: block;
+    left: 50%;
+    border: 4px solid var(--verde);
+    top: 64%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    transition: .5s;
+    opacity: 0;
+}
+
 .secaoPasseiosDiferentes__integrantes img {
     width: 100%;
     max-width: 7.32rem;
@@ -638,11 +666,8 @@ body {
     display: block;
     border-radius: 50%;
     position: relative;
-    top: 2rem;
-}
-
-.secaoPasseiosDiferentes__integrantes img::before {
-    content: '';
+    transition: .5s;
+    top: 1rem;
 }
 
 .secaoPasseiosDiferentes__integrantes #pontasIntegrantes {
