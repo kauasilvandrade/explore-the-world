@@ -618,7 +618,7 @@ body {
 
 .secaoPasseiosDiferentes__listaIntegrantes {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     text-align: center;
     list-style: none;
@@ -649,7 +649,7 @@ body {
     border-radius: 50%;
     display: block;
     left: 50%;
-    border: 4px solid var(--verde);
+    border: 4px solid var(--azulClaro);
     top: 64%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -789,7 +789,7 @@ body {
 .secaoGaleria___listaGaleria {
     list-style: none;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 2rem;
 }
 
@@ -869,11 +869,30 @@ body {
 .rodape {}
 
 /* INFORMAÇÕES */
+.rodape__info {
+    background-color: var(--azulEscuro-1);
+}
+
+.rodape__listaInfo {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+}
+
 .rodape__info {}
 
-.rodape__listaInfo {}
-
-.rodape__listaInfo h3{}
+.rodape__listaInfo h3 {
+    color: var(--branco);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 1.1em;
+}
 
 /* ITEM CONTATO */
 .contactUs {}
@@ -891,11 +910,24 @@ body {
 
 .info__noticiasPopulares {}
 
-.info__noticia {}
+.info__noticia {
+    margin-bottom: 1.5rem;
+}
 
-.info__noticia a {}
+.info__noticia a {
+    text-decoration: none;
+    color: var(--azulClaro);
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9em;
+}
 
-.info__noticia span {}
+.info__noticia span {
+    color: #9b9b9bb9;
+    display: block;
+    font-weight: 600;
+    font-size: 0.8em;
+}
 
 /* ITEM LINKS RÁPIDOS */
 .linksRapidos {}
@@ -911,14 +943,38 @@ body {
 .info__linksRapidos a {}
 
 /* CRÉDITOS */
-.rodape__creditos {}
+.rodape__creditos {
+    background-color: var(--azulEscuro-2);
+    padding: 1.5rem;
+}
 
-.rodape__creditos p {}
+.rodape__creditos > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
 
-.rodape__icones {}
+.rodape__creditos p {
+    color: var(--cinza);
+    font-size: 0.75em;
+    font-weight: 600;
+}
 
-.rodape__icones a {}
+.rodape__icones {
+    order: -1;
+}
+
+.rodape__icones a {
+    margin-right: 1rem;
+}
 
 .rodape__icones a i {}
 
-.rodape__creditos  a {}
+.rodape__creditos  a {
+    text-decoration: none;
+    color: var(--cinza);
+    font-weight: 600;
+    font-size: 0.9em;
+}
