@@ -929,6 +929,11 @@ body {
     color: var(--branco);
     text-decoration: none;
     font-size: 0.9em;
+    transition: .5s;
+}
+
+.info__contato a:hover {
+    color: var(--azulClaro);
 }
 
 /* ITEM NOTICÍA */
@@ -946,8 +951,13 @@ body {
     display: inline-block;
     margin-bottom: 0.5rem;
     font-size: 0.9em;
+    transition: .5s;
 }
 
+.info__noticia a:hover {
+    color: #04968c;
+}
+ 
 .info__noticia span {
     color: #9b9b9bb9;
     display: block;
@@ -977,6 +987,11 @@ body {
     color: var(--branco);
     align-items: center;
     gap: 0.6rem;
+    transition: .5s;
+}
+
+.info__link a:hover {
+    color: var(--azulClaro);
 }
 
 .info__link a::before {
@@ -1047,17 +1062,28 @@ body {
 
 .rodape__icones {
     order: -1;
+    font-size: 1.2em;
 }
 
 .rodape__icones a {
     margin-right: 1rem;
+    transition: .5s;
+}
+
+.rodape__icones a:hover {
+    color: var(--azulClaro);
 }
 
 .rodape__icones a i {}
 
-.rodape__creditos  a {
+.rodape__creditos a {
     text-decoration: none;
     color: var(--cinza);
     font-weight: 600;
     font-size: 0.9em;
+    transition: .5s;
+}
+
+.rodape__creditos a:hover {
+    color: var(--azulClaro);
 }
