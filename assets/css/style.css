@@ -259,9 +259,10 @@ body {
 }
 
 .secaoCategoria__itemCategoria {
-    margin-bottom: 2rem;
     overflow: hidden;
     position: relative;
+    max-width: 365px;
+    margin: auto auto 2rem auto;
     height: 19rem;
 }
 
@@ -343,7 +344,9 @@ body {
 
 .secaoDiscover__img img {
     width: 100%;
-    margin-bottom: 2rem;
+    display: block;
+    margin: auto auto 2rem auto;
+    max-width: 36rem;
 }
 
 /* INFORMAÇÕES DISCORVER */
@@ -439,7 +442,7 @@ body {
 .secaoServicos__listaServicos {
     list-style-type: none;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     text-align: center;
     gap: 2rem;
 }
@@ -451,6 +454,7 @@ body {
     gap: 1.5rem;
     position: relative;
     transition: .5s;
+    flex: 1 1 273px;
 }
 
 .secaoServicos__itemServicos::before {
