@@ -59,9 +59,10 @@ body {
     background-color: transparent;
     position: relative;
     margin-right: 3rem;
+    cursor: pointer;
 }
 
-.cabecalho__btnMenu span, .cabecalho__btnMenu span::before, .cabecalho__btnMenu span::after {
+.cabecalho__btnMenu .hamburguer, .cabecalho__btnMenu .hamburguer::before, .cabecalho__btnMenu .hamburguer::after {
     content: '';
     background-color: white;
     height: 0.18rem;
@@ -71,14 +72,35 @@ body {
     transition: .3s;
 }
 
-.cabecalho__btnMenu span {}
+.cabecalho__btnMenu .hamburguer {}  
 
-.cabecalho__btnMenu span::before {
+.cabecalho__btnMenu .hamburguer::before {
     top: -10px;   
+    transition: .3s;
 }
 
-.cabecalho__btnMenu span::after {
+.cabecalho__btnMenu .hamburguer::after {
     bottom: -10px;
+    transition: .3s;
+}
+
+.cabecalho__btnMenu .hamburguer.ativado {
+    transform: rotate(180deg);
+}
+
+.cabecalho__btnMenu .hamburguer.ativado::before {
+    width: 14px;
+    transform: rotate(45deg);
+    top: -6px;
+    left: 12px;
+}
+
+.cabecalho__btnMenu .hamburguer.ativado::after {
+    bottom: -10px;
+    width: 15px;
+    transform: rotate(-45deg);
+    left: 12px;
+    top: 5px;
 }
 
 /* LOGO */
@@ -96,8 +118,13 @@ body {
     height: 100vh;
     width: 15rem;
     top: 4.4rem;
-    border-left: 3px solid var(--cinza);
+    border-left: 2px solid var(--cinza);
     padding-top: 6rem;
+    transition: .5s;
+}
+
+.cabecalho__listaMenu.ativado {
+    left: 0;
 }
 
 .cabecalho__itemMenu {}
@@ -133,6 +160,11 @@ body {
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    transition: .5s;
+}
+
+.cabecalho__iconesRedes.ativado {
+    left: 0;
 }
 
 .cabecalho__iconesRedes a {
