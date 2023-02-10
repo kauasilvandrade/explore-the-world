@@ -5,8 +5,8 @@
 - EXPLORE THE WORLD
 - DISCOVER
 - SEVICES [x]
-- HOT TOURS
-- INTEGRANTES 
+- HOT TOURS [X]
+- INTEGRANTES [X]
 - GALERIA
 - RODAPE [X]
 
@@ -14,7 +14,7 @@
 */
 
 @media screen and (min-width: 411px) {
- 
+
     /* SEÇÃO PASSEIOS DIFERENTES */
     .secaoPasseiosDiferentes__integrantes:hover.secaoPasseiosDiferentes__integrantes img {
         top: 0rem;
@@ -73,6 +73,21 @@
     /* DESCRIÇÃO */
     .secaoCompraPasseio__descricao {
         width: 50%;
+    }
+
+    .descricao__preco span {
+        width: 4.5rem;
+        height: 3.5rem;
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+    
+    .descricao__preco span::before {
+        top: 2.3rem;
+        width: 2.375rem;
+        left: -25px;
+        background-color: white;
+        transform: rotate(322deg);
     }
 
     /* CRÉDITOS */
