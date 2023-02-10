@@ -1,7 +1,20 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 768px) {
-    
+/* SEÇÕES TERMINADAS 
+
+- EXPLORE THE WORLD
+- DISCOVER
+- SEVICES [x]
+- HOT TOURS
+- INTEGRANTES 
+- GALERIA
+- RODAPE [X]
+
+
+*/
+
+@media screen and (min-width: 411px) {
+ 
     /* SEÇÃO PASSEIOS DIFERENTES */
     .secaoPasseiosDiferentes__integrantes:hover.secaoPasseiosDiferentes__integrantes img {
         top: 0rem;
@@ -18,7 +31,29 @@
     
     .secaoPasseiosDiferentes__integrantes img {
         top: 1rem;
+    } 
+
+    /* INFORMAÇÕES */
+    .rodape__info {
+        text-align: left;
     }
+
+    .rodape__listaInfo h3 {
+        text-align: left;
+    }
+
+    .info__listaLinksRapidos {
+        display: block;
+        columns: 2;
+    }
+
+    .info__link {
+        margin-bottom: 0.5rem;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
 
     /* SEÇÃO COMPRA DE PASSEIO */
     .secaoCompraPasseio__passeio {
@@ -33,6 +68,16 @@
     /* DESCRIÇÃO */
     .secaoCompraPasseio__descricao {
         width: 50%;
+    }
+
+    /* CRÉDITOS */
+    .rodape__creditos > .container {
+        justify-content: space-between;
+        text-align: unset;
+    }
+
+    .rodape__icones {
+        order: unset;
     }
 
 }

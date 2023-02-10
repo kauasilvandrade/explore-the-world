@@ -664,7 +664,7 @@ body {
 .secaoPasseiosDiferentes__integrantes {
     width: 100%;
     position: relative;
-    flex: 1 1 12.5rem;
+    flex: 1 1 10rem;
 }
 
 .secaoPasseiosDiferentes__integrantes:hover.secaoPasseiosDiferentes__integrantes img {
@@ -913,14 +913,17 @@ body {
 .rodape__listaInfo {
     list-style-type: none;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 1rem;
     gap: 2rem;
 }
 
-.rodape__info {}
+.rodape__info {
+    flex: 1 1 12rem;
+    text-align: center;
+}
 
 .rodape__listaInfo h3 {
     color: var(--branco);
@@ -1085,8 +1088,9 @@ body {
 
 .rodape__creditos > .container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     text-align: center;
     gap: 1rem;
 }
