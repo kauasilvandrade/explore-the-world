@@ -51,6 +51,11 @@
         margin-bottom: 0.5rem;
     }
 
+    .info__contato {
+        width: auto;
+        margin: unset;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
