@@ -2,7 +2,6 @@
 
 /* CONFIGURAÇÕES GLOBAIS */
 :root {
-
     --branco: #fff;
     --cinza: #9b9b9b;
     --cinza-claro: #f7f7f7;
@@ -14,7 +13,6 @@
     --laranja: #ffcc00;
 
     --fonte: "Montserrat", sans-serif, Arial, sans-serif;
-
 }
 
 * {
@@ -30,7 +28,7 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: 940px;
+    max-width: 750px;
 }
 
 /* CABEÇALHO */
@@ -84,6 +82,7 @@ body {
     transition: .3s;
 }
 
+/* CLASSE ATIVADA COM JAVASCRIPT */
 .cabecalho__btnMenu .hamburguer.ativado {
     transform: rotate(180deg);
 }
@@ -108,6 +107,7 @@ body {
 
 .cabecalho__logo img {
     max-width: 14rem;
+    width: 100%;
 }
 
 .cabecalho__listaMenu {
@@ -219,7 +219,6 @@ body {
     text-decoration: none;
     padding: 1rem 1.1em;
     position: relative;
-    overflow: hidden;
     z-index: 1;
 }
 
@@ -263,18 +262,14 @@ body {
     position: relative;
     max-width: 22.8rem;
     margin: auto auto 2rem auto;
-    height: 19rem;
-}
-
-.secaoCategoria__itemCategoria:nth-of-type(2) h3 {
-    transform: translateX(-50%);
+    height: 21rem;
 }
 
 .secaoCategoria__itemCategoria a {}
 
 .secaoCategoria__itemCategoria a img {
     width: 100%;
-    height: 19rem;
+    height: 21rem;
     transition: .5s;
 }
 
@@ -290,6 +285,10 @@ body {
     transform: translateX(-43%);
     font-weight: 600;
     min-width: 10.7rem;
+}
+
+.secaoCategoria__itemCategoria:nth-of-type(2) h3 {
+    transform: translateX(-50%);
 }
 
 .secaoCategoria__irPara {
@@ -312,11 +311,6 @@ body {
     position: relative;
 }
 
-
-.secaoCategoria__irPara:hover.secaoCategoria__irPara span {
-    width: 3rem;
-}
-
 .secaoCategoria__irPara span::before {
     content: '';
     position: absolute;
@@ -330,13 +324,17 @@ body {
     transition: .5s;
 }
 
+.secaoCategoria__irPara:hover.secaoCategoria__irPara span {
+    width: 3rem;
+}
+
 .secaoCategoria__irPara:hover.secaoCategoria__irPara span::before {
     left: 2.8rem;
 }
 
 /* SEÇÃO DISCOVER NEW HORIZONS */
 .secaoDiscover {
-    padding: 4.5rem 1.5rem;
+    padding: 4.5rem 1.5rem 2rem;
 }
 
 /* IMAGEM */
@@ -364,13 +362,20 @@ body {
     text-align: center;
     margin-bottom: 2rem;
     display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    justify-content: center;
 }
 
-.secaoDiscover__itemInfo {}
+.secaoDiscover__itemInfo {
+    margin-left: -0.6rem;
+}
 
-.secaoDiscover__itemInfo a {
+.secaoDiscover__itemInfo input[type="radio"] {
+    display: none;
+}
+
+.secaoDiscover__itemInfo label {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.1em;
@@ -467,12 +472,12 @@ body {
     border: 8px solid var(--cinza-claro);
 }
 
-.secaoServicos__itemServicos:hover {
-    box-shadow: 0 0 10px 0 rgb(0 0 0 / 17%);
-}
-
 .secaoServicos__itemServicos:hover.secaoServicos__itemServicos::before {
     border: none;
+}
+
+.secaoServicos__itemServicos:hover {
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 17%);
 }
 
 .secaoServicos__itemServicos span {}
