@@ -60,14 +60,41 @@
 
 @media screen and (min-width: 768px) {
 
+    /* SEÇÃO CATEGORIA */
+    .secaoCategoria {
+        padding: 20rem 3rem 5rem 3rem;
+        position: relative;
+    }
+
+    .secaoCategoria__listaCategoria {
+        display: flex;
+        position: absolute;
+        top: -3rem;
+        right: 0;
+        max-width: 61.25rem;
+        left: 0;
+        margin: auto;
+        gap: 1rem;
+    }
+
+    .secaoCategoria__itemCategoria {
+        overflow: hidden;
+        position: relative;
+        max-width: 22.8rem;
+        margin: auto auto 2rem auto;
+        height: 19rem;
+    }
+
     /* SEÇÃO COMPRA DE PASSEIO */
     .secaoCompraPasseio__passeio {
         display: flex;
         gap: 2rem;
+        border: 1px solid var(--cinza);
     }
 
     .secaoCompraPasseio__img {
         width: 50%;
+        margin-bottom: unset;
     }
 
     /* DESCRIÇÃO */
@@ -98,6 +125,10 @@
 
     .rodape__icones {
         order: unset;
+    }
+
+    .info__linksRapidos > a {
+        margin: unset;
     }
 
 }

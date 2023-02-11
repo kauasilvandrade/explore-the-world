@@ -917,7 +917,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     gap: 2rem;
 }
 
@@ -1101,6 +1101,7 @@ body {
 .rodape__creditos p {
     color: var(--cinza);
     font-size: 0.75em;
+    line-height: 1.5rem;
     font-weight: 600;
 }
 
