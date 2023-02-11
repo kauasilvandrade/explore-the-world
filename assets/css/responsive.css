@@ -110,6 +110,11 @@
         border-bottom: unset;
     }
 
+    .secaoDiscover__itemInfo label::before {
+
+        left: 10px;
+    }
+
     .secaoDiscover__descricaoInfo p {
         text-align: left;
     }

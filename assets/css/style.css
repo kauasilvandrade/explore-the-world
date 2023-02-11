@@ -371,10 +371,6 @@ body {
     margin-left: -0.6rem;
 }
 
-.secaoDiscover__itemInfo input[type="radio"] {
-    display: none;
-}
-
 .secaoDiscover__itemInfo label {
     text-decoration: none;
     text-transform: uppercase;
@@ -385,6 +381,59 @@ body {
     padding: 0.7rem;
     display: inline-block;
     letter-spacing: 2px;
+    position: relative;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.secaoDiscover__itemInfo label:hover {
+    color: var(--azulClaro);
+}
+
+.secaoDiscover__itemInfo label::before {
+    content: '';
+    background-color: var(--azulClaro);
+    width: 0%;
+    position: absolute;
+    height: 3px;
+    bottom: -3px;
+    transform-origin: left;
+    left: 0;
+    transition: .4s;
+}
+
+.secaoDiscover__infoDiscover input {
+    display: none;
+}
+
+#radio1:not(:checked) ~ #info1 {
+    display: none;
+}
+#radio1:checked ~ .secaoDiscover__listaInfo .secaoDiscover__itemInfo:nth-child(1) label {
+    color: var(--azulClaro);
+}
+#radio1:checked ~ .secaoDiscover__listaInfo .secaoDiscover__itemInfo:nth-child(1) label::before {
+    width: 100%;
+}
+
+#radio2:not(:checked) ~ #info2 {
+    display: none;
+}
+#radio2:checked ~ .secaoDiscover__listaInfo .secaoDiscover__itemInfo:nth-child(2) label {
+    color: var(--azulClaro);
+}
+#radio2:checked ~ .secaoDiscover__listaInfo .secaoDiscover__itemInfo:nth-child(2) label::before {
+    width: 100%;
+}
+
+#radio3:not(:checked) ~ #info3 {
+    display: none;
+}
+#radio3:checked ~ .secaoDiscover__listaInfo .secaoDiscover__itemInfo:nth-child(3) label {
+    color: var(--azulClaro);
+}
+#radio3:checked ~ .secaoDiscover__listaInfo .secaoDiscover__itemInfo:nth-child(3) label::before {
+    width: 100%;
 }
 
 /* DESCRIÇÃO INFORMAÇÕES */
@@ -832,7 +881,7 @@ body {
 .secaoGaleria___listaGaleria {
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 2rem;
 }
 
