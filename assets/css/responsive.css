@@ -71,14 +71,8 @@
 
     /* CABEÇALHO */
     .cabecalho {
-        display: block;
         padding: 0;
-    }
-    
-    .cabecalho > .container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        height: auto;
     }
 
     .cabecalho__btnMenu, .cabecalho__logo {
@@ -95,20 +89,53 @@
         border-left: unset;
         padding-top: 0;
         transition: unset;
+        gap: 1rem;
     }
 
     .cabecalho__itemMenu a {
         display: block;
-        text-decoration: none;
         color: white;
         padding: 0.93rem;
-        margin-bottom: 0.2rem;
+        margin-bottom: 0;
+        font-weight: 500;
+        padding: 1.2rem;
+        position: relative;
+    }
+
+    .cabecalho__itemMenu a::before {
+        content: '';
+        background-color: #01b3a7;
+        height: 3px;
+        width: 0%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform-origin: left;
+        transition: .4s;
+        
+    }
+
+    .cabecalho__itemMenu a:hover {
+        background: rgba(255, 255, 255, 0.11);
+    }
+
+    .cabecalho__itemMenu a:hover::before {
+        width: 100%;
+    }
+
+    .cabecalho__itemMenu #linkDestaque {
+        background: rgba(255, 255, 255, 0.11);
+        border-top: 3px solid #01b3a7;
+    }
+    .cabecalho__itemMenu #linkDestaque:hover::before {
+        width: 0;
     }
 
     .cabecalho__iconesRedes {
         position: unset;
         border-bottom: unset;
         width: auto;
+        height: auto;
     }
 
     .cabecalho__iconesRedes a {
@@ -157,7 +184,6 @@
     }
 
     .secaoDiscover__itemInfo label::before {
-
         left: 10px;
     }
 
