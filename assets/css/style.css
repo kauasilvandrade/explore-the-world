@@ -398,8 +398,8 @@ body {
     height: 3px;
     bottom: -3px;
     transform-origin: left;
-    left: 0;
-    transition: .4s;
+    left: 10px;
+    transition: .6s;
 }
 
 .secaoDiscover__infoDiscover input {
@@ -508,7 +508,7 @@ body {
     gap: 1.5rem;
     position: relative;
     transition: .5s;
-    flex: 1 1 17.06rem;
+    flex: 1 1 18.06rem;
 }
 
 .secaoServicos__itemServicos::before {

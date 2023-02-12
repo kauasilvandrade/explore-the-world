@@ -69,6 +69,52 @@
 
 @media screen and (min-width: 768px) {
 
+    /* CABEÇALHO */
+    .cabecalho {
+        display: block;
+        padding: 0;
+    }
+    
+    .cabecalho > .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cabecalho__btnMenu, .cabecalho__logo {
+        display: none;
+    }
+
+    .cabecalho__listaMenu {
+        position: unset;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        height: auto;
+        width: auto;
+        border-left: unset;
+        padding-top: 0;
+        transition: unset;
+    }
+
+    .cabecalho__itemMenu a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        padding: 0.93rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .cabecalho__iconesRedes {
+        position: unset;
+        border-bottom: unset;
+        width: auto;
+    }
+
+    .cabecalho__iconesRedes a {
+        color: white;
+    }
+
     /* SEÇÃO CATEGORIA */
     .secaoCategoria {
         padding: 20rem 3rem 5rem 3rem;
@@ -201,3 +247,11 @@
     }
 
 }
+
+@media screen and (min-width: 1200px) {
+    
+    .container {
+        max-width: 1200px;
+    }
+ 
+}    
