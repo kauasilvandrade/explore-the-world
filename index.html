@@ -30,7 +30,11 @@
             <nav class="cabecalho__menuNavegacao">
 
                 <!-- BOTÃO MOBILE MENU -->
-                <button class="cabecalho__btnMenu">
+                <button class="cabecalho__btnMenu"
+                aria-expanded="false"
+                aria-controls="menu"
+                aria-label="Botão abrir menu"
+                aria-haspopup="true">
                     <span class="hamburguer"></span>
                 </button>
 
@@ -40,7 +44,7 @@
                     <figcaption hidden>Logo da empresa Wonder Tuor</figcaption>
                 </figure>
 
-                <ul class="cabecalho__listaMenu">
+                <ul class="cabecalho__listaMenu" id="menu">
 
                     <li class="cabecalho__itemMenu">
                         <a href="#" id="linkDestaque">Home</a>
