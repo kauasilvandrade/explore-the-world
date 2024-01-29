@@ -810,7 +810,7 @@ body {
     background-image: url(../img/banner-2.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1700px;
+    background-size: cover;
     background-attachment: fixed;
     padding: 5rem 0.83rem;
     text-align: center;
@@ -886,8 +886,8 @@ body {
 .secaoGaleria___listaGaleria {
     list-style: none;
     display: flex;
-    flex-direction: row;
-    gap: 2rem;
+    flex-direction: column;
+    gap: 4rem;
 }
 
 .secaoGaleria__itemGaleria {

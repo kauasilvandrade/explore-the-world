@@ -272,6 +272,11 @@
         font-size: 0.96em;
     }
 
+    /* LISTA DA GALERIA */
+    .secaoGaleria___listaGaleria {
+        flex-direction: row;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
