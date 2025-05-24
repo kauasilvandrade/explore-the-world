@@ -16,6 +16,8 @@ Esse projeto foi desenvolvido com o objetivo de treinar minhas habilidades na co
 
 https://kauasilvandrade.github.io/explore-the-world/
 
+![explore-the-world](https://github.com/user-attachments/assets/a0e80dd1-e168-4518-941a-56859537286b)
+
 ## 🔧 Como usar
 
 Clone o repositório e abra o `index.html` no navegador:
